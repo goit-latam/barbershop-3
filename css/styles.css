@@ -103,7 +103,7 @@ body {
 /** -----------------------HEADER---------------------- */
 
 .header {
-  background-color: var(--second-title-color);
+  background-color: grey;
   padding-top: 32px;
 }
 
@@ -434,6 +434,8 @@ body {
   color: var(--accent-color);
 }
 
+/* ----------gallery------------ */
+
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
@@ -444,18 +446,56 @@ body {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.footer {
-}
+/* -------forma----------- */
 
+.wrap {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+}
 .form-section {
   background: #191c26;
+  width: 50%;
+  padding-bottom: 100px;
+  padding-left: 55px;
+  padding-right: 40px;
 }
 
+/* ----------contacts-section ---------*/
 .form-title {
   color: var(--main-title-color);
 }
 
-.footer-adress {
+.contacts-section {
+  height: 646px;
+  width: 50%;
+  background-color: #191c26;
+  padding-left: 100px;
+  padding-right: 105px;
+}
+.contacts-title {
+  color: var(--main-title-color);
+  margin-bottom: 40px;
+}
+
+.contacts-container {
+  display: block;
+}
+
+.contacts-content {
+  margin-top: 70px;
+}
+
+.contacts-list-item {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.contacts-adress {
   font-style: normal;
 
   font-size: 18px;
@@ -466,7 +506,7 @@ body {
   color: var(--second-text-color);
 }
 
-.footer-contacts {
+.contacts-links {
   font-style: normal;
 
   font-size: 18px;
@@ -486,6 +526,7 @@ body {
   text-transform: uppercase;
 
   color: var(--main-title-color);
+  margin-bottom: 20px;
 }
 
 .info {
@@ -497,14 +538,39 @@ body {
   color: var(--second-text-color);
 }
 
+/*  ----------------footer--------- */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
 .copyright {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
 
   letter-spacing: 0.2em;
 
   color: var(--second-text-color);
+  margin: 0;
+}
+
+.footer-list {
+  display: flex;
+}
+.footer-list-link {
+  display: flex;
+}
+.footer-list-link:not(:last-child) {
+  margin-right: 40px;
 }
 
 .footer-link {
@@ -516,8 +582,6 @@ body {
   letter-spacing: 0.2em;
 
   color: var(--second-text-color);
-}
-
-.wrap {
-  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
